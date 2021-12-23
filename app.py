@@ -85,7 +85,8 @@ table = DataTable(columns = columns,
 current_date = str(datetime.datetime.now())[:10]
 
 # initialise app
-app = dash.Dash()
+app = dash.Dash(__name__)
+server = app.server
 # layout
 app.layout = html.Div(children = [
 	html.H1('Welcome to Maurits\'s football recommendations web app!', 
