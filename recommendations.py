@@ -113,9 +113,14 @@ print('Sending notification(s)...')
 for rec in recs:      
     resp = client.send_message(
         rec,
-        'Daily football notification',
+        'Daily recommendation',
         48183,
-        170
+        170,
+        '33',
+        'blank',
+        'https://footy-recs.herokuapp.com/',
+        'Open recommendations dashboard',
+        '', '', '', '', '', '', '', ''
         )
 
 # print status message
